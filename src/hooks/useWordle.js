@@ -79,6 +79,7 @@ const useWordle = (solution) => {
   // handle keyup event & track current guess
   // if user presses enter, add the new guess
   const handleKeyup = ({ key }) => {
+    let solution_length = solution.length
     if (key === 'Enter') {
       // only add guess if turn is less than 5
       if (turn > 5) {
@@ -91,8 +92,8 @@ const useWordle = (solution) => {
         return
       }
       // check word is 5 chars
-      if (currentGuess.length !== 5) {
-        console.log('word must be 5 chars.')
+      if (currentGuess.length !== solution_length) {
+        console.log(`word must be ${solution_length} chars.`)
         return
       }
       const formatted = formatGuess()
@@ -103,7 +104,7 @@ const useWordle = (solution) => {
       return
     }
     if (/^[A-Za-z]$/.test(key)) {
-      if (currentGuess.length < 5) {
+      if (currentGuess.length < solution_length) {
         setCurrentGuess(prev => prev + key)
       }
     }
