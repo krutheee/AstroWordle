@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AstroWordle/static/css/main.78a7b5ea.css",
+    "main.js": "/AstroWordle/static/js/main.cd361052.js",
+    "index.html": "/AstroWordle/index.html",
+    "main.78a7b5ea.css.map": "/AstroWordle/static/css/main.78a7b5ea.css.map",
+    "main.cd361052.js.map": "/AstroWordle/static/js/main.cd361052.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78a7b5ea.css",
+    "static/js/main.cd361052.js"
+  ]
+}
